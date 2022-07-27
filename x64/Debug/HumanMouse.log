@@ -1,4 +1,5 @@
 ﻿  test.cpp
-C:\Users\ji-li\OneDrive\Documents\Github\HumanMouse\HumanMouse\mouse.h(114,32): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\ji-li\OneDrive\Documents\Github\HumanMouse\HumanMouse\mouse.h(114,35): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  HumanMouse.vcxproj -> C:\Users\ji-li\OneDrive\Documents\Github\HumanMouse\x64\Debug\HumanMouse.exe
+A:\Documents\Github\HumanMouse\mouse.h(114,32): warning C4244: 'initialisation' : conversion de 'double' en 'int', perte possible de données
+A:\Documents\Github\HumanMouse\mouse.h(114,35): warning C4244: 'initialisation' : conversion de 'double' en 'int', perte possible de données
+  LINK : A:\Documents\Github\HumanMouse\x64\Debug\HumanMouse.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+  HumanMouse.vcxproj -> A:\Documents\Github\HumanMouse\x64\Debug\HumanMouse.exe

@@ -70,13 +70,6 @@ namespace HMouse {
 			move = Normalize(move);
 		}
 
-		//INPUT input{};
-		//ZeroMemory(&input, sizeof(INPUT));
-		//input.type = INPUT_MOUSE;
-		//input.mi.dx = move.x;
-		//input.mi.dy = move.y;
-		//input.mi.dwFlags = MOUSEEVENTF_MOVE | MOUSEEVENTF_ABSOLUTE;
-		//SendInput(1, &input, sizeof(INPUT));
 		mouse_event( MOUSEEVENTF_MOVE | MOUSEEVENTF_ABSOLUTE, move.x, move.y, 0, 0 );
 	}
 
@@ -108,8 +101,15 @@ namespace HMouse {
 			double x = start.x + (end.x - start.x) * i / n;
 			double y = start.y + (end.y - start.y) * i / n;
 
-			x += rand() % 100 * i / n;
-			y += rand() % 100 * i / n;
+			// Define random generator with Gaussian distribution
+			const double mean = 0.0;
+			const double stddev = 10.0;
+			std::default_random_engine generator;
+			std::normal_distribution<double> dist(mean, stddev);
+			
+			// Add Gaussian noise
+			x += dist(generator);
+			y += dist(generator);
 			
 			detail::path.push_back(Vec2(x, y));
 		}
