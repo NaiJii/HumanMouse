@@ -1,0 +1,9 @@
+﻿  test.cpp
+C:\Users\ji-li\OneDrive\Documents\Github\HumanMouse\HumanMouse\test.cpp(31,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ji-li\OneDrive\Documents\Github\HumanMouse\HumanMouse\test.cpp(31,41): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Generating code
+  1 of 21 functions ( 4.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  HumanMouse.vcxproj -> C:\Users\ji-li\OneDrive\Documents\Github\HumanMouse\x64\Release\HumanMouse.exe
